@@ -1,0 +1,238 @@
+.site-wrapper { /*Hela sidan*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: -8px;
+}
+
+.main-header { /*Headern*/
+  background-color: #D9CFC1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header h1 { /*Headern h1 rubrik*/
+  font-family: Zeyada;
+  font-size: 60px;
+  padding-left: 40px;
+  color: black;
+  text-decoration: underline;
+  margin: 30px 0px 0px 0px;
+}
+
+.content{ /*Hela innehållet exklusive headern*/
+  background-color: #D9CFC1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.recepie { /*Div som varje box med ett recept och fakta ruta.*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #D9CFC1;
+  margin: 5px;
+}
+ 
+.recepie-to-do { /*Vita boxarna med receptet i*/
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 10px;
+  padding: 15px;
+  border: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  margin: 0px 20px 10px 0px;
+}
+
+.icons-w-info { /*Fältet med ikoner i recept boxen*/
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-w-info .fas { /*Ikonerna i recept boxen*/
+  margin: 12px 5px 0px 5px;
+}
+
+.icons-w-info p { /*Texten vid ikonerna i recept boxen*/
+  font-size: 12px;
+}
+
+.recepie-list-ingridients { /*Delen med ingredienserna och bilden i recept boxen*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recepie article img { /*Bilderna i recept boxarna*/
+  width: 350px;
+  padding-right: 20px;
+  border-radius: 200px;
+}
+
+.aside-content { /*Delen till höger med plats för fakta rutan*/
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recepie-fun-fact{ /*Vita boxarna med en fakta rutan*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEE3AB;
+  border: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  padding: 0px 20px 20px 20px;
+  margin-right: 20px;
+  box-shadow: 2px 2px gray;
+}
+
+.links-other-recepies { /*Boxen med bilderna som är länkar till andra recept*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+hr { /*De horisontella linjerna*/
+  width: 100%;
+}
+
+.recepie-to-do h3 { /*Receptboxarnas h3 rubriker*/
+  font-family: Zeyada;
+  font-size: 30px;
+  color: #80A1C1;
+  margin-bottom: -10px;
+  margin-top: -5px;
+}
+
+.recepie-to-do h2 { /*Receptboxarnas h2 rubriker*/
+  width: 100%;
+  font-family: Zeyada;
+  font-size: 40px;
+  color: #B2675E;
+  margin-bottom: -10px;
+}
+
+.other-recepies { /*Boxen med andra recept i*/
+  border: dotted;
+  border-width: 1px;
+  border-color: gray;
+}
+
+.other-recepies h3 { /*H3 rubriken ovanför bildlänkarna till andra recept*/
+  font-family: Zeyada;
+  color:black;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+p, ul, ol { /*Alla p-taggar ul-taggar och ol-taggar*/
+  font-family: Roboto;
+  line-height: 150%;
+  font-size: 15px;
+}
+
+.recepie-fun-fact .fa-thumbtack { /*Ikonen i boxen med fakta och länkar till andra recept*/
+  padding: 10px;
+}
+
+.recepie-fun-fact h2 { /*Faktaboxarnas h2 taggar */
+  font-family: Zeyada;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+
+.recepie-fun-fact p { /*Paragraf texten i vita boxarna med fakta*/
+  text-align: center;
+}
+
+.links-other-recepies a img { /*Bilderna med länkar till andra recept*/
+  width: 90px;
+  border-radius: 0px;
+  margin-left: 5px;
+  padding: 20px;
+}
+
+#second-budapest { /*Den andra bilden på en budapestbakelse i boxen med länkar till andra recept*/
+  width: 90px;
+  height: 70px;
+}
+
+@media (max-width: 450px) { 
+  .main-header h1 {
+    font-size: 50px;
+  }
+
+  .content {
+    background-color: white;
+    padding: 0px;
+  }
+
+  .recepie {
+    background-color: white;
+    margin: 0px;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .recepie-to-do {
+    width: 100%;
+    padding: 0px;
+    border: none;
+  }
+
+  .recepie-to-do h2 {
+    font-size: 25px;
+  }
+
+  .recepie-to-do h3 {
+    font-size: 20px;
+  }
+
+  ul, ol {
+    padding: 20px;
+  }
+
+ ul, ol, p {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  article .recepie-list-ingridients img {
+    width: 180px;
+    height: 150px;
+  }
+
+  .aside-content {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .aside-content .recepie-fun-fact {
+    border: none;
+    padding: 5px;
+    box-shadow: none;
+    margin: 0px;
+  }
+
+  .other-recepies {
+    border: none;
+  }
+
+  .links-other-recepies a img {
+    width: 70px;
+  }
+}
